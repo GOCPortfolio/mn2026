@@ -61,6 +61,10 @@ const CONFIG = {
     moments: [
       { label: 'Where it began', title: 'Hello dear', tag: 'Groom to bride', img: 'assets/photos/selfie-sm.webp', w: 520, h: 749, alt: 'Miracle and Newman together, early days' },
       { label: 'Her reply', title: 'Hiii', tag: 'Bride to groom', img: 'assets/photos/redhug-sm.webp', w: 520, h: 650, alt: 'Newman gently touching Miracle’s face' },
+      { label: 'Throwback', title: 'Good times', tag: '', img: 'assets/photos/tb1-sm.webp', w: 520, h: 925, alt: 'Miracle and Newman smiling together in a throwback photo' },
+      { label: 'Throwback', title: 'Always smiling', tag: '', img: 'assets/photos/tb2-sm.webp', w: 520, h: 925, alt: 'Miracle and Newman laughing together, a throwback moment' },
+      { label: 'Throwback', title: 'Side by side', tag: '', img: 'assets/photos/tb3-sm.webp', w: 520, h: 924, alt: 'Miracle and Newman side by side, a throwback selfie' },
+      { label: 'Throwback', title: 'Close to my heart', tag: '', img: 'assets/photos/tb4-sm.webp', w: 520, h: 769, alt: 'Miracle and Newman close together, a throwback moment' },
       { label: 'And now', title: 'The rest is history', tag: '', img: 'assets/photos/white1-sm.webp', w: 520, h: 651, alt: 'Miracle and Newman dancing in white' }
     ],
     outro: 'Our journey wasn’t without its uncertainties, but through the moments of silence, distance, and doubt, we somehow kept finding our way back to each other. With patience, understanding, grace, and faith, we grew into what we share today. To my Miracle, thank you for choosing us, for being part of my story, and for making this journey worthwhile. I may not promise a perfect life, but I promise to keep choosing you, growing with you, and building a home filled with love, friendship, and God’s presence.',
@@ -77,7 +81,11 @@ const CONFIG = {
       { f: 'white1', w: 520, h: 651, alt: 'Miracle and Newman dancing in white' },
       { f: 'redstand', w: 520, h: 650, alt: 'Miracle and Newman standing together in red and black' },
       { f: 'marble1', w: 520, h: 780, alt: 'Newman and Miracle against a marble wall' },
-      { f: 'trad1', w: 520, h: 650, alt: 'Miracle and Newman in burgundy traditional attire' }
+      { f: 'trad1', w: 520, h: 650, alt: 'Miracle and Newman in burgundy traditional attire' },
+      { f: 'tb1', w: 520, h: 925, alt: 'Miracle and Newman smiling together in a throwback photo' },
+      { f: 'tb2', w: 520, h: 925, alt: 'Miracle and Newman laughing together, a throwback moment' },
+      { f: 'tb3', w: 520, h: 924, alt: 'Miracle and Newman side by side, a throwback selfie' },
+      { f: 'tb4', w: 520, h: 769, alt: 'Miracle and Newman close together, a throwback moment' }
     ]
   },
   toast: [
