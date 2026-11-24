@@ -115,11 +115,11 @@ const CONFIG = {
     ['Groom’s Outfit', 'AB Dozzy Fashion Home'],
     ['Entertainment', 'DJ Kellyfan'],
     ['Master of Ceremony', 'The Anchor DMC'],
-    ['Website Design', 'G.O.C | Brand Strategist × AI']      // developer credit (last item)
+    ['Website Design', 'G.O.C | Brand Strategist × AI', 'https://wa.me/2348027134537?text=' + encodeURIComponent('Hello! I saw the Miracle & Newman wedding website and I would love one for my wedding.')]      // developer credit (last item)
   ],
   developer: {
     name: 'G.O.C | Brand Strategist × AI',
-    whatsapp: ''             // G.O.C WhatsApp number, international format, no +. Button stays hidden until filled.
+    whatsapp: '2348027134537'  // G.O.C WhatsApp number, international format, no +. Button stays hidden until filled.
   },
   footer: { thanks: 'Thank you for celebrating with us. Your love, prayers and presence mean the world to us.' },
   share: 'You are invited to celebrate the union of Miracle & Newman, Monday, 4th January 2027. #NewMiracle2027',
@@ -387,7 +387,7 @@ window.WEDDING_CONFIG = CONFIG;
   });
 
   /* ---------- vendors ---------- */
-  $('#vendorList').innerHTML = C.vendors.map(function (v) { return '<li><span>' + esc(v[0]) + '</span><b>' + esc(v[1]) + '</b></li>'; }).join('');
+  $('#vendorList').innerHTML = C.vendors.map(function (v) { return '<li><span>' + esc(v[0]) + '</span><b>' + (v[2] ? '<a class="v-link" target="_blank" rel="noopener" href="' + esc(v[2]) + '">' + esc(v[1]) + '</a>' : esc(v[1])) + '</b></li>'; }).join('');
 
   /* ---------- gifts: copy account number ---------- */
   $('#copyAcc').addEventListener('click', function () {

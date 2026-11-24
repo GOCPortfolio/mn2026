@@ -379,3 +379,6 @@ html:not(.js) .sound, html:not(.js) .intro { display: none; }
   .lb-p { left: 28px; } .lb-n { right: 28px; }
   @media (min-width: 1500px) { .masonry { columns: 5; } }
 }
+
+.vendor-list .v-link { color: inherit; text-decoration: underline; text-decoration-color: var(--goldl); text-underline-offset: 4px; }
+.vendor-list .v-link:hover { color: var(--goldl); }
