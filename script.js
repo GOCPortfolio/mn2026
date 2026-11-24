@@ -94,7 +94,7 @@ const CONFIG = {
     person: 'Our coordinators'
   },
   rsvp: {
-    endpoint: '',            // paste your Google Apps Script Web App URL here (see README)
+    endpoint: 'https://script.google.com/macros/s/AKfycbzIXK7S8xe2DXzyvhHF7JIoZkhtaWALa1Qer52I5hrcJWSft5gwvzSzXhXcJLQlfKC0/exec',            // paste your Google Apps Script Web App URL here (see README)
     maxGuests: 10
   },
   gifts: {
