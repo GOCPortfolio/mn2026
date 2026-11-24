@@ -59,13 +59,13 @@ const CONFIG = {
     title: 'From a Simple Hello to a Lifetime of Love',
     intro: 'It all began with a simple Facebook message: “Hello, dear.” What started as an ordinary greeting soon became countless calls, conversations, and my persistent attempts to get her attention. Funny enough, whenever I called, she would ask, “Who is this?” and I would patiently introduce myself all over again. Then came our first date, and somewhere between the conversations, laughter, and growing connection, something beautiful began to unfold. What started as an ordinary friendship slowly became a love story neither of us could have imagined.',
     moments: [
-      { label: 'Where it began', title: 'Hello dear', tag: 'Groom to bride', img: 'assets/photos/selfie-sm.webp', w: 520, h: 749, alt: 'Miracle and Newman together, early days' },
-      { label: 'Her reply', title: 'Hiii', tag: 'Bride to groom', img: 'assets/photos/redhug-sm.webp', w: 520, h: 650, alt: 'Newman gently touching Miracle’s face' },
-      { label: 'Throwback', title: 'Good times', tag: '', img: 'assets/photos/tb1-sm.webp', w: 520, h: 925, alt: 'Miracle and Newman smiling together in a throwback photo' },
-      { label: 'Throwback', title: 'Always smiling', tag: '', img: 'assets/photos/tb2-sm.webp', w: 520, h: 925, alt: 'Miracle and Newman laughing together, a throwback moment' },
-      { label: 'Throwback', title: 'Side by side', tag: '', img: 'assets/photos/tb3-sm.webp', w: 520, h: 924, alt: 'Miracle and Newman side by side, a throwback selfie' },
-      { label: 'Throwback', title: 'Close to my heart', tag: '', img: 'assets/photos/tb4-sm.webp', w: 520, h: 769, alt: 'Miracle and Newman close together, a throwback moment' },
-      { label: 'And now', title: 'The rest is history', tag: '', img: 'assets/photos/white1-sm.webp', w: 520, h: 651, alt: 'Miracle and Newman dancing in white' }
+      { label: 'Where it began', title: 'Hello dear', tag: 'Groom to bride', img: 'assets/photos/selfie-sm.webp', w: 520, h: 749, alt: '' },
+      { label: 'Her reply', title: 'Hiii', tag: 'Bride to groom', img: 'assets/photos/redhug-sm.webp', w: 520, h: 650, alt: '' },
+      { label: 'Throwback', title: 'Good times', tag: '', img: 'assets/photos/tb1-sm.webp', w: 520, h: 925, alt: '' },
+      { label: 'Throwback', title: 'Always smiling', tag: '', img: 'assets/photos/tb2-sm.webp', w: 520, h: 925, alt: '' },
+      { label: 'Throwback', title: 'Side by side', tag: '', img: 'assets/photos/tb3-sm.webp', w: 520, h: 924, alt: '' },
+      { label: 'Throwback', title: 'Close to my heart', tag: '', img: 'assets/photos/tb4-sm.webp', w: 520, h: 769, alt: '' },
+      { label: 'And now', title: 'The rest is history', tag: '', img: 'assets/photos/white1-sm.webp', w: 520, h: 651, alt: '' }
     ],
     outro: 'Our journey wasn’t without its uncertainties, but through the moments of silence, distance, and doubt, we somehow kept finding our way back to each other. With patience, understanding, grace, and faith, we grew into what we share today. To my Miracle, thank you for choosing us, for being part of my story, and for making this journey worthwhile. I may not promise a perfect life, but I promise to keep choosing you, growing with you, and building a home filled with love, friendship, and God’s presence.',
     closing: 'And to God, who makes all things beautiful in His time, thank You for turning an ordinary “Hello” into an extraordinary forever.'
