@@ -14,7 +14,7 @@ const CONFIG = {
     seal: 'M&N',
     hashtag: '#NewMiracle2027',
     tagline: 'Bound by love, Blessed by Grace',
-    heroBride: 'MIMI',
+    heroBride: 'MIRA',
     heroGroom: 'MR SPEAKER',
     bride: { title: 'Miss', given: 'MIRACLE', surname: 'John', parents: 'Daughter of Rev & Mrs Dickson John Chimereucheya' },
     groom: { title: 'Mr', given: 'NEWMAN', surname: 'Achor', parents: 'Son of Deacon & Deaconess Nkiruka Achor' }
