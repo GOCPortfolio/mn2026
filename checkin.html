@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Guest check-in | Staff only</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@500;600&display=swap">
+<style>
+  :root{--burg:#331313;--burg2:#4a1f20;--gold:#9c8d59;--goldl:#c9bb85;--olive:#1a2b1c;--paper:#ece6e2;--ok:#2f6b3a;--warn:#8a6a14;--bad:#8a1f1f}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;background:var(--burg);color:#e4dcd8;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.2rem;padding:20px 16px 60px}
+  main{max-width:480px;margin:0 auto}
+  h1{font-family:'Cinzel',Georgia,serif;color:var(--goldl);font-size:1.3rem;letter-spacing:.14em;text-transform:uppercase;text-align:center;margin:10px 0 4px}
+  .sub{text-align:center;font-style:italic;margin:0 0 20px}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:20px}
+  .stats div{border:1px solid var(--gold);padding:10px 4px;text-align:center}
+  .stats b{display:block;font-family:'Cinzel',Georgia,serif;font-size:1.6rem;color:var(--goldl)}
+  .stats span{font-family:'Montserrat',Arial,sans-serif;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase}
+  label{display:block;font-family:'Montserrat',Arial,sans-serif;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;margin:16px 0 6px;color:var(--goldl)}
+  input{width:100%;min-height:52px;padding:10px 14px;font:inherit;font-size:1.3rem;border:1.5px solid var(--gold);border-radius:4px;background:#fff;color:var(--burg);letter-spacing:.08em;text-transform:uppercase}
+  input#key{text-transform:none;letter-spacing:0}
+  .row{display:flex;gap:10px;margin-top:14px}
+  button{flex:1;min-height:52px;border-radius:99px;border:1.5px solid var(--gold);background:var(--gold);color:var(--burg);font-family:'Montserrat',Arial,sans-serif;font-weight:600;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+  button.ghost{background:transparent;color:var(--goldl)}
+  button:disabled{opacity:.5}
+  :focus-visible{outline:3px solid var(--goldl);outline-offset:3px}
+  video{width:100%;border-radius:6px;margin-top:14px;background:#000}
+  .res{margin-top:22px;padding:22px 18px;border-radius:6px;text-align:center;border:2px solid}
+  .res.ok{background:#17301c;border-color:#5cae6b}.res.warn{background:#3a2e0b;border-color:#d1a93a}.res.bad{background:#3a1010;border-color:#d46060}
+  .res h2{margin:0 0 6px;font-family:'Cinzel',Georgia,serif;font-size:1.3rem;letter-spacing:.06em}
+  .res .big{font-size:2.1rem;line-height:1.15;margin:4px 0}
+  .res p{margin:4px 0}
+  .res button{margin-top:16px;width:100%;background:#5cae6b;border-color:#5cae6b;color:#0d2312}
+  .note{font-size:1rem;opacity:.85;text-align:center;margin-top:26px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Guest check-in</h1>
+  <p class="sub" id="who">Staff only</p>
+  <div class="stats" id="stats" hidden>
+    <div><b id="stParties">0</b><span>RSVPs</span></div><div><b id="stExpected">0</b><span>Expected</span></div><div><b id="stArrived">0</b><span>Arrived</span></div>
+  </div>
+
+  <label for="key">Staff key</label>
+  <input id="key" type="password" autocomplete="off" placeholder="Enter once, saved on this phone">
+
+  <label for="code">Entry code</label>
+  <input id="code" autocomplete="off" autocapitalize="characters" placeholder="MN27-XXXXXXXX" maxlength="40">
+  <div class="row"><button id="go" type="button">Check code</button><button id="scan" type="button" class="ghost" hidden>Scan QR</button></div>
+  <video id="vid" playsinline muted hidden></video>
+
+  <div id="res" aria-live="polite"></div>
+  <p class="note">Tip: the guest's QR code can also be scanned with any phone camera. It opens this page with the code filled in.</p>
+</main>
+<script src="script.js" defer></script>
+<script src="checkin.js" defer></script>
+</body>
+</html>
